@@ -15,7 +15,9 @@ import ReactDom from 'react-dom'
 
 // import App from './07-lifetimes/App'
 // import App from './08-context/App'
-import App from './08-context/count/App'
+// import App from './08-context/count/App'
+//  import App from './09-HOC/App'
+import App from './10-router/App'
 
 // class App extends  Component{
 
@@ -29,8 +31,11 @@ import App from './08-context/count/App'
 // }
 
 
+import {BrowserRouter as Router } from 'react-router-dom'
 
 ReactDom.render(
-    <App />,
+    <Router>
+       <App msg="world" />
+    </Router>,
     document.getElementById('root')
 )
