@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import { Route,} from 'react-router-dom'
+import React, { Component,Fragment } from 'react';
+import { Route } from 'react-router-dom'
+import Nesting from './Nesting'
 
 
 
@@ -23,8 +24,12 @@ class App extends Component {
     render() {
         return (
 
-              //路由传参
+            <Fragment>
+
                <Route path='/:id' exact component ={Child}></Route>
+               <Nesting />
+
+               </Fragment>
             
         );
     }
